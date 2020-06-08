@@ -1,39 +1,27 @@
 {
-"AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Template for setting up basic VPC",
-    "Metadata": {
-
-    },
-    "Parameters": {
-        
-        "name": {
-          "Type": "AWS::EC2::VPC",
-          "Properties": {
-            "CidrBlock": "10.0.0.0/16",
-            "Tags": [
-              {
-                "key": "environment",
-                "value": "development"
-              },
-              {
-                "key":"Name",
-                "value":"Development VPC"
-              }
-            ]
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Template for setting up basic VPC",
+  "Metadata": {},
+  "Parameters": {
+    "name": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "Tags": [
+          {
+            "key": "environment",
+            "value": "development"
+          },
+          {
+            "key": "Name",
+            "value": "Development VPC"
           }
-        }
-        
-    },
-    "Mappings": {
-
-    },
-    "Conditions": {
-
-    },
-    "Resources": {
-
-    },
-    "Outputs": {
-
+        ]
+      }
     }
+  },
+  "Mappings": {},
+  "Conditions": {},
+  "Resources": {},
+  "Outputs": {}
 }
