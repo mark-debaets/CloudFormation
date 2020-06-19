@@ -2,8 +2,11 @@
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Template for setting up basic VPC",
   "Metadata": {},
-  "Parameters": {
-    "name": {
+  "Parameters": {},
+  "Mappings": {},
+  "Conditions": {},
+  "Resources": {
+    "Dev vpc": {
       "Type": "AWS::EC2::VPC",
       "Properties": {
         "CidrBlock": "10.0.0.0/16",
@@ -20,8 +23,5 @@
       }
     }
   },
-  "Mappings": {},
-  "Conditions": {},
-  "Resources": {},
   "Outputs": {}
 }

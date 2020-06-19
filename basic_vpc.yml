@@ -1,9 +1,15 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Template for basic VPC
-Metadata: 
+Metadata:
 
-Parameters: 
-Basic_vpc:
+Parameters:
+
+Mappings:
+
+Conditions:
+
+Resources:
+  Basic_vpc:
   Type: AWS::EC2::VPC
   Properties:
     CidrBlock: 10.0.0.0/16
@@ -11,11 +17,4 @@ Basic_vpc:
     Tags:
       - Key: environment
         Value: development
-
-Mappings: 
-
-Conditions: 
-
-Resources: 
-
 Outputs:
